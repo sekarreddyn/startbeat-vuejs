@@ -1,0 +1,147 @@
+.white {
+  color: #fff !important;
+}
+
+.menu-expanded .brand-logo {
+  margin-left: 5px;
+  width: 136px !important;
+}
+
+.menu-expanded .brand-logo-sm {
+  display: none;
+}
+
+.menu-collapsed .brand-logo {
+  display: none;
+}
+
+.menu-collapsed .brand-logo-sm {
+  display: block;
+  width: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.brand-logo-login {
+  width: 70px;
+}
+
+.error-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.errorTitle {
+  font-size: 5rem;
+}
+
+.main-menu-content {
+  overflow: auto;
+}
+
+body.menu-collapsed .main-menu-content {
+  overflow: visible !important;
+}
+
+body.menu-collapsed .main-menu-content .has-sub > a {
+  overflow: visible !important;
+}
+
+body.menu-collapsed
+  .main-menu
+  .main-menu-content
+  .has-sub
+  > a
+  > span.menu-title,
+body.menu-collapsed .main-menu .main-menu-content .hover > a > span.menu-title {
+  right: auto;
+  left: 60px !important;
+  right: auto;
+  transform: translateX(0);
+  background-color: #fa626b !important;
+}
+
+body.menu-collapsed
+  .main-menu
+  .main-menu-content
+  .has-sub:hover
+  > a
+  > span.menu-title {
+  display: block !important;
+  position: absolute;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  right: auto;
+}
+
+body.menu-collapsed .main-menu .main-menu-content .has-sub > a ~ ul {
+  left: 60px;
+  width: 260px;
+  position: absolute;
+  background: #fff;
+  box-shadow: 15px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+body.menu-collapsed .main-menu .main-menu-content .has-sub > a ~ ul > li > a {
+  padding: 10px;
+  padding-left: 35px;
+}
+
+body.menu-collapsed .main-menu .main-menu-content .has-sub:hover > a ~ ul {
+  display: block !important;
+}
+
+body.menu-collapsed
+  .main-menu
+  .main-menu-content
+  .has-sub
+  ul.menu-content
+  a:hover,
+body.menu-expanded
+  .main-menu
+  .main-menu-content
+  .has-sub
+  ul.menu-content
+  a:hover {
+  color: #fa626b;
+}
+
+body.menu-collapsed
+  .main-menu
+  .main-menu-content
+  .has-sub
+  ul.menu-content
+  a:hover:before {
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: #fa626b;
+}
+
+body.menu-expanded
+  .main-menu
+  .main-menu-content
+  .has-sub
+  ul.menu-content
+  a:hover:before {
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 65px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: #fa626b;
+}
+
+.table-action-btn i {
+  font-size: 1.2rem;
+}
