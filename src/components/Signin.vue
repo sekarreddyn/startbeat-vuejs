@@ -9,7 +9,11 @@
                 <div class="card-header border-0">
                   <div class="text-center mb-1">
                     <h1>
-                      <img class="brand-logo-login" alt="Starbeat" src="/assets/favicon.png">
+                      <img
+                        class="brand-logo-login"
+                        alt="Starbeat"
+                        src="../assets/starbeat-logotext.png"
+                      />
                     </h1>
                   </div>
                   <h3 class="text-center text-muted">Member Login</h3>
@@ -24,9 +28,9 @@
                           placeholder="Your Username"
                           name="username"
                           v-model="formdata.username"
-                        >
+                        />
                         <div class="form-control-position">
-                          <i class="ft-user"/>
+                          <i class="ft-user" />
                         </div>
                         <div
                           v-show="submitted && !formdata.username"
@@ -40,9 +44,9 @@
                           placeholder="Enter Password"
                           name="password"
                           v-model="formdata.password"
-                        >
+                        />
                         <div class="form-control-position">
-                          <i class="ft-lock"/>
+                          <i class="ft-lock" />
                         </div>
                         <div
                           v-show="submitted && !formdata.password"
@@ -59,7 +63,7 @@
                           <img
                             v-show="auth.status.loggingIn"
                             src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
-                          >
+                          />
                           <div
                             class="alert alert-danger"
                             v-show="auth.status.error"
@@ -81,6 +85,7 @@
 
 <script>
 import { mapActions, mapState } from "vuex";
+
 export default {
   data() {
     return {
